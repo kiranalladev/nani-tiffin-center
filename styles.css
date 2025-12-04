@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  color: #222;
+}
+
+.header {
+  text-align: center;
+  padding: 1.5rem;
+  background: #e65100;
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 1.5rem auto;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.menu,
+.order {
+  flex: 1 1 300px;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.menu h2,
+.order h2 {
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px dashed #eee;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item h3 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.menu-item p {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.menu-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.add-btn {
+  padding: 0.3rem 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #e65100;
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+.add-btn:hover {
+  opacity: 0.9;
+}
+
+.order-list {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed #eee;
+  font-size: 0.9rem;
+}
+
+.order-item span {
+  margin-right: 0.5rem;
+}
+
+.qty {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.remove-btn {
+  border: none;
+  background: #c62828;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  opacity: 0.9;
+}
+
+.bill {
+  border-top: 2px solid #eee;
+  padding-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.bill-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.25rem 0;
+}
+
+.bill-row.total {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.clear-btn {
+  margin-top: 0.75rem;
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background: #757575;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.clear-btn:hover {
+  opacity: 0.9;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: #666;
+}
