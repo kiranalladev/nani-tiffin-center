@@ -2,103 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Nani Tiffin Center</title>
+  <title>Nani Tiffin Center | Home</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="header">
-    <h1>Nani Tiffin Center</h1>
-    <p>Fresh · Homemade · Tasty</p>
+    <div class="brand">
+      <h1>Nani Tiffin Center</h1>
+      <p class="tagline">Since 1990 · Village Style Tiffins</p>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="order.html">Order</a>
+      <a href="about.html">About</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <section class="menu">
-      <h2>Menu</h2>
-      <div class="menu-item">
-        <div>
-          <h3>Idli (2 pcs)</h3>
-          <p>Soft steamed rice cakes</p>
-        </div>
-        <div class="menu-actions">
-          <span class="price" data-price="30">₹30</span>
-          <button class="add-btn" data-name="Idli" data-price="30">Add</button>
-        </div>
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Homely Breakfast With a Village Touch</h2>
+      <p>Freshly prepared idli, dosa, poori, vada and more – just like home, served hot every morning.</p>
+      <div class="hero-buttons">
+        <a href="menu.html" class="btn primary">View Menu</a>
+        <a href="order.html" class="btn secondary">Place an Order</a>
       </div>
+    </div>
+  </section>
 
-      <div class="menu-item">
-        <div>
-          <h3>Dosa</h3>
-          <p>Crispy dosa with chutney & sambar</p>
-        </div>
-        <div class="menu-actions">
-          <span class="price" data-price="40">₹40</span>
-          <button class="add-btn" data-name="Dosa" data-price="40">Add</button>
-        </div>
+  <main class="home-main">
+    <section class="highlights">
+      <div class="card">
+        <h3>Authentic Taste</h3>
+        <p>Traditional recipes passed down through family, keeping the original village taste alive.</p>
       </div>
-
-      <div class="menu-item">
-        <div>
-          <h3>Poori (3 pcs)</h3>
-          <p>Fluffy pooris with curry</p>
-        </div>
-        <div class="menu-actions">
-          <span class="price" data-price="45">₹45</span>
-          <button class="add-btn" data-name="Poori" data-price="45">Add</button>
-        </div>
+      <div class="card">
+        <h3>Clean & Hygienic</h3>
+        <p>Neat kitchen, filtered water, and quality ingredients for every tiffin we serve.</p>
       </div>
-
-      <div class="menu-item">
-        <div>
-          <h3>Upma</h3>
-          <p>Healthy and light breakfast</p>
-        </div>
-        <div class="menu-actions">
-          <span class="price" data-price="35">₹35</span>
-          <button class="add-btn" data-name="Upma" data-price="35">Add</button>
-        </div>
-      </div>
-
-      <div class="menu-item">
-        <div>
-          <h3>Vada (2 pcs)</h3>
-          <p>Crispy vadas with chutney</p>
-        </div>
-        <div class="menu-actions">
-          <span class="price" data-price="30">₹30</span>
-          <button class="add-btn" data-name="Vada" data-price="30">Add</button>
-        </div>
+      <div class="card">
+        <h3>Daily Fresh</h3>
+        <p>All tiffins are prepared fresh every morning – no overnight food, ever.</p>
       </div>
     </section>
 
-    <section class="order">
-      <h2>Order & Bill</h2>
-      <ul id="order-list" class="order-list">
-        <!-- Items will be added here by JS -->
-      </ul>
-
-      <div class="bill">
-        <div class="bill-row">
-          <span>Subtotal:</span>
-          <span id="subtotal">₹0</span>
+    <section class="gallery">
+      <h2>Popular Tiffins</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://picsum.photos/seed/idli/400/260" alt="Idli" />
+          <p>Soft Idli with Sambar & Chutney</p>
         </div>
-        <div class="bill-row">
-          <span>GST (5%):</span>
-          <span id="gst">₹0</span>
+        <div class="gallery-item">
+          <img src="https://picsum.photos/seed/dosa/400/260" alt="Dosa" />
+          <p>Crispy Dosa, golden and thin</p>
         </div>
-        <div class="bill-row total">
-          <span>Total Bill:</span>
-          <span id="total">₹0</span>
+        <div class="gallery-item">
+          <img src="https://picsum.photos/seed/poori/400/260" alt="Poori" />
+          <p>Fluffy Poori with special curry</p>
         </div>
       </div>
-
-      <button id="clear-order" class="clear-btn">Clear Order</button>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2025 Nani Tiffin Center · Hyderabad</p>
+    <p>© 1990–2025 Nani Tiffin Center · Hyderabad</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
